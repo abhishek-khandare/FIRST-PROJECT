@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+	<groups>
+<run>
+<include name="sanity"> <!-- grouping is used when you have to run test on basis of group-->
+</include>
+</run>
+</groups>
+    <classes>
+      <class name="testNG_Grouping.MyTest"/>
+      <class name="testNG_Grouping.MyTest1"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
